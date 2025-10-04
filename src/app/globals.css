@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.row {
+  padding: 1em;
+  border: 1px, solid red;
+  background-color: aqua;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import img1 from "../../public/img1.png";
+import Button from "./(components)/Button";
 
 export default function Home() {
   return (
@@ -31,6 +33,17 @@ export default function Home() {
       <Link href="https://claude.ai/new" target="_blank">
         Next js site
       </Link>
+      <Image src={img1} alt="sample image" style={{ width: "100%", objectFit: "cover" }} />
+      {/**this is for large size capacity */}
+      <img src={img1.src} alt="sample 2" />
+      <Image
+        src={
+          "https://media.istockphoto.com/id/2208884525/photo/leaf-surface-with-water-drops-macro-shallow-dofleaf-surface-with-water-drops-macro-shallow-dof.jpg?s=2048x2048&w=is&k=20&c=AT1y7I7kLxzKX1-Ij0WlmrF5p2Xkz7H0GEMvH9FMW6c="
+        }
+        alt="sample 3"
+        width={1000}
+        height={1000}></Image>
+      <Button />
     </>
   );
 }
